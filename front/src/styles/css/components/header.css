@@ -1,0 +1,16 @@
+.main-header {
+  background-color: #1D8BC1;
+  min-heigt: 50px; }
+  .main-header .logo {
+    display: block;
+    width: 230px;
+    padding: 0 15px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff; }
+    @media (min-width: 1024px) {
+      .main-header .logo .logo-mini {
+        display: none; } }
+
+/*# sourceMappingURL=header.css.map */

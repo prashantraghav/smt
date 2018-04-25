@@ -1,0 +1,19 @@
+@import '../stylekit/_colors';
+@import '../config/_mixins';
+@import '../config/_utilities';
+@import '../config/_variables';
+
+
+.main-sidebar{
+	height: 100vh;
+	background-color: $primary-black;
+	float: left;
+	color: $primary-white;
+	position:absolute;
+	width: $main-sidebar-width;
+	@extend .sidebar-container-transition;
+
+	&.collapsed{
+		@include transform(translate( $main-sidebar-width * -1 , 0));
+	}
+}

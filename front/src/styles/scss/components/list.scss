@@ -1,0 +1,11 @@
+@import '../stylekit/_grid';
+
+.list-of-candidates{
+  .candidate{
+    div{
+      @include columns(2.4, 0, 0);
+      text-align: left;
+      border: 1px solid black;
+    }
+  }
+}

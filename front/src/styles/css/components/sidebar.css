@@ -1,0 +1,20 @@
+.sidebar-container-transition, .main-sidebar {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.main-sidebar {
+  height: 100vh;
+  background-color: #333333;
+  float: left;
+  color: #ffffff;
+  position: absolute;
+  width: 230px; }
+  .main-sidebar.collapsed {
+    -webkit-transform: translate(-230px, 0);
+    -ms-transform: translate(-230px, 0);
+    -o-transform: translate(-230px, 0);
+    transform: translate(-230px, 0); }
+
+/*# sourceMappingURL=sidebar.css.map */

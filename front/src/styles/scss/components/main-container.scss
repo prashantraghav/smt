@@ -1,0 +1,23 @@
+@import '../stylekit/_layout';
+@import '../config/_utilities';
+@import '../config/_variables';
+@import '../config/_mixins';
+
+.main-container{
+	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+	display: block;
+	background-color: grey;
+	height: 100vh;
+	@extend .sidebar-container-transition;
+}
+
+.main-sidebar:not(.collapsed) + .main-container{
+	@include transform(translate( $main-sidebar-width, 0));
+	@include desktop {
+		width: calc(100% - #{$main-sidebar-width});
+		margin-left: $main-sidebar-width;
+		@include transform(unset);
+	}
+}

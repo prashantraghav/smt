@@ -1,0 +1,23 @@
+@import '../stylekit/_layout';
+@import '../stylekit/_colors';
+
+.main-header{
+	background-color: $primary-blue;
+	min-heigt: 50px;
+
+	.logo{
+		display: block;
+		width: 230px;
+		padding: 0 15px;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		color: $primary-white;
+
+		@include desktop {
+			.logo-mini {
+				display: none;
+			}
+		}
+	}
+}

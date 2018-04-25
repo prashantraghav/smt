@@ -1,0 +1,29 @@
+*,
+  *:before,
+  *:after{
+    box-sizing: border-box;
+  }
+
+
+  @mixin clearfix(){
+    &::after{
+      display: table;
+      clear: both;
+      content: ' ';
+    }
+  }
+
+  @mixin columns($cols, $margin: 10, $padding: 0){
+    width: calc((100% - #{ 2 * $margin + 2 * $padding}px * #{ 12 / $cols}) / #{ 12 / $cols});
+    margin-left: #{$margin}px;
+    margin-right: #{$margin}px;
+    padding-left: #{$padding}px;
+    padding-right: #{$padding}px;
+    float: left;
+
+  }
+
+  .row {
+    @include clearfix;
+  }
+

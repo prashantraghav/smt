@@ -1,0 +1,21 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.row::after {
+  display: table;
+  clear: both;
+  content: ' '; }
+
+.list-of-candidates .candidate div {
+  width: calc((100% - 0px * 5) / 5);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  float: left;
+  text-align: left;
+  border: 1px solid black; }
+
+/*# sourceMappingURL=list.css.map */
