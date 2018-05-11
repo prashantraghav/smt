@@ -8,9 +8,10 @@
 	margin-left: 0;
 	margin-right: auto;
 	display: block;
-	background-color: grey;
+	background-color: $main-container-background-color;
 	height: 100vh;
 	@extend .sidebar-container-transition;
+	padding: 15px;
 }
 
 .main-sidebar:not(.collapsed) + .main-container{

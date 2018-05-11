@@ -9,8 +9,9 @@
   margin-left: 0;
   margin-right: auto;
   display: block;
-  background-color: grey;
-  height: 100vh; }
+  background-color: #ECF0F6;
+  height: 100vh;
+  padding: 15px; }
 
 .main-sidebar:not(.collapsed) + .main-container {
   -webkit-transform: translate(230px, 0);
